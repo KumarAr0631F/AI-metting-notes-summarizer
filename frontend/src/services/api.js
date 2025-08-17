@@ -1,7 +1,7 @@
 // src/services/api.js
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:3000/api/summary';
+const BASE_URL = 'https://ai-metting-notes-summarizer-backend.onrender.com/api/summary';
 
 export const uploadFile = async (file) => {
   const formData = new FormData();
