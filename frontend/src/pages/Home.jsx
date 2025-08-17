@@ -24,7 +24,7 @@ const Home = () => {
       formData.append('file', file);
       formData.append('prompt', prompt);
       const res = await axios.post("/api/summary/upload", formData, {
-        baseURL: "http://localhost:3000",
+        baseURL: "https://ai-metting-notes-summarizer-backend.onrender.com",
         headers: { "Content-Type": "multipart/form-data" },
       });
       // Show toast and redirect after short delay
