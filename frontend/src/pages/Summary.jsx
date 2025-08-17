@@ -20,7 +20,7 @@ const Summary = () => {
     }
     setSending(true);
     try {
-      const res = await axios.post('http://localhost:3000/api/summary/send-email', {
+      const res = await axios.post('https://ai-metting-notes-summarizer-backend.onrender.com/api/summary/send-email', {
         to: email,
         subject: 'Your AI Summary',
         text: editableSummary,
